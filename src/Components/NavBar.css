@@ -33,8 +33,12 @@
 
 .nav-logo {
   cursor: pointer;
-  width: 100px;
-  margin-right: 25px;
+  width: 80px;
+  max-height: 48px;
+  height: auto;
+  margin-right: 18px;
+  object-fit: contain;
+  display: block;
 }
 
 .navBrandBlock {
@@ -251,8 +255,9 @@
 
 @media (max-width: 480px) {
   .nav-logo {
-    width: 82px;
-    margin-right: 10px;
+    width: 56px;
+    max-height: 40px;
+    margin-right: 8px;
   }
 
   .stickyNav {
