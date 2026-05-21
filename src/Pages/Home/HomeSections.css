@@ -1,0 +1,322 @@
+.sectionLabel {
+  font-weight: 550;
+  background: #2b2b2b;
+  color: white;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 3px;
+}
+
+.trendingSection {
+  width: 93%;
+  margin: 0 auto 50px;
+}
+
+.trendingGrid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.trendingCard {
+  background: white;
+  flex: 1 1 calc(16.666% - 10px);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.trendingImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+.trendingText {
+  font-weight: 550;
+  padding: 10px;
+  font-size: 15px;
+  color: #2b2b2b;
+}
+
+.iplSection {
+  width: 93%;
+  margin: 0 auto 50px;
+}
+
+.iplContent {
+  display: flex;
+  padding: 20px 0;
+  background: white;
+}
+
+.iplLeftPane {
+  flex: 1.4;
+  padding: 0 20px;
+  min-width: 0;
+}
+
+.iplRightPane {
+  flex: 1;
+  padding: 0 20px;
+  min-width: 0;
+}
+
+.iplTabs,
+.iplTabsRow {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.iplTabActive {
+  font-size: 17px;
+  color: #079035;
+  font-weight: 550;
+}
+
+.iplTab {
+  font-size: 17px;
+  color: #3f3f3f;
+  font-weight: 550;
+}
+
+.iplHr {
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+}
+
+.iplLeadRow {
+  display: flex;
+  gap: 20px;
+  min-width: 0;
+}
+
+.iplLeadCard {
+  flex: 1;
+  min-width: 0;
+}
+
+.iplLeadImage {
+  width: 100%;
+  height: 207px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.iplLeadText {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 550;
+  color: #2b2b2b;
+  line-height: 24px;
+}
+
+.iplStoryList {
+  flex: 1;
+  color: #3f3f3f;
+  min-width: 0;
+}
+
+.iplStoryRow {
+  display: flex;
+  gap: 13px;
+}
+
+.iplStoryTextWrap {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.iplStoryText {
+  font-size: 15px;
+}
+
+.iplThumb {
+  border-radius: 3px;
+  height: 57px;
+  width: 75px;
+  object-fit: cover;
+}
+
+.iplStoryDivider {
+  border: 1px solid lightgray;
+  width: 35%;
+  margin: 10px 0;
+}
+
+.iplDivider {
+  border: 1px solid lightgray;
+  height: 310px;
+}
+
+.iplEmptyState {
+  text-align: center;
+}
+
+.kooWidget {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.kooHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 0;
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.kooTitle {
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.kooAvatarWrap {
+  height: 25px;
+}
+
+.kooAvatar {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -20px;
+  border: 2px solid #f1f1f1;
+}
+
+.kooFeedList {
+  padding: 0 10px;
+  background: white;
+  height: 270px;
+  overflow: auto;
+}
+
+.kooFeedItem {
+  display: flex;
+  gap: 4%;
+  padding: 10px 0;
+}
+
+.kooFeedImageWrap {
+  height: 70px;
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+}
+
+.kooFeedImage {
+  margin-top: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kooFeedContent {
+  flex: 3;
+}
+
+.kooFeedMetaRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.kooUser {
+  font-weight: 550;
+  font-size: 13px;
+}
+
+.kooTime {
+  font-weight: 550;
+  font-size: 13px;
+  color: #9e9e9e;
+}
+
+.kooText {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
+.kooDivider {
+  margin: 0;
+  border: 1px solid lightgray;
+}
+
+@media (max-width: 900px) {
+  .trendingSection,
+  .iplSection {
+    width: 96%;
+  }
+
+  .trendingCard {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .iplContent {
+    flex-direction: column;
+  }
+
+  .iplDivider {
+    display: none;
+  }
+
+  .iplLeftPane,
+  .iplRightPane {
+    padding: 0 14px;
+  }
+
+  .kooFeedList {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .trendingSection,
+  .iplSection {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .trendingGrid {
+    flex-direction: column;
+  }
+
+  .trendingCard {
+    flex: 1 1 100%;
+  }
+
+  .iplLeadRow,
+  .iplStoryRow,
+  .kooFeedItem {
+    flex-direction: column;
+  }
+
+  .iplLeadImage,
+  .trendingImage,
+  .kooFeedImage {
+    height: auto;
+  }
+
+  .iplStoryDivider {
+    width: 100%;
+  }
+
+  .kooFeedImageWrap {
+    width: 100%;
+  }
+
+  .kooFeedContent {
+    width: 100%;
+  }
+
+  .iplTabs,
+  .iplTabsRow {
+    gap: 12px;
+  }
+}

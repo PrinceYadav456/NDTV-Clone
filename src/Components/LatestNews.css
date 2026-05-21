@@ -1,0 +1,18 @@
+.latestNewsSection {
+  margin-bottom: 20px;
+}
+
+.latestNewsTitle {
+  margin-bottom: 10px;
+}
+
+.latestNewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.latestNewsLink {
+  color: #0b5cff;
+  text-decoration: none;
+}

@@ -1,0 +1,98 @@
+.homeContainer {
+  width: 93%;
+  margin-top: 50px;
+  margin-left: 3.5%;
+  display: flex;
+  gap: 2%;
+  margin-bottom: 50px;
+}
+
+.homeChild1 {
+  flex: 1.16;
+}
+
+.homeChild2 {
+  flex: 2;
+}
+
+.homeChild3 {
+  flex: 1;
+  padding-top: 125px;
+  box-sizing: border-box;
+}
+
+.homeOpinion {
+  border-radius: 3px;
+}
+
+.homeMainColumn {
+  flex: 3.3;
+  min-width: 0;
+}
+
+.homeIntroRow {
+  display: flex;
+  gap: 2.6%;
+  min-width: 0;
+}
+
+.homeAdImage {
+  width: 100%;
+  border-radius: 3px;
+  height: 100px;
+}
+
+@media (max-width: 900px) {
+  .homeContainer {
+    width: 96%;
+    margin-left: 2%;
+    flex-direction: column;
+  }
+
+  .homeMainColumn,
+  .homeChild1,
+  .homeChild2,
+  .homeChild3 {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .homeIntroRow {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .homeOpinion {
+    margin-top: 16px;
+  }
+
+  .homeChild3 {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homeContainer {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .homeMainColumn,
+  .homeChild1,
+  .homeChild2,
+  .homeChild3 {
+    width: 100%;
+  }
+
+  .homeOpinion {
+    overflow: hidden;
+  }
+
+  .homeAdImage {
+    height: auto;
+  }
+}

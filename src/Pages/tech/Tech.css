@@ -1,0 +1,48 @@
+.techPage {
+  padding: 20px;
+}
+
+.techList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.techLink {
+  color: #0b5cff;
+  text-decoration: none;
+}
+
+.techRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.techImage {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.techTitle {
+  margin: 0;
+}
+
+.techDate {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .techRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .techImage {
+    width: 100%;
+    height: auto;
+  }
+}

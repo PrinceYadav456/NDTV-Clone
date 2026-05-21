@@ -1,0 +1,270 @@
+.upperDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 130px;
+  background: #3e3e3e;
+}
+
+.upperDiv .upperChildHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  color: #b5b5b5;
+  cursor: pointer;
+}
+
+.upperDiv .upperChildHover:hover {
+  background: black;
+}
+
+.stickyNav {
+  margin: auto;
+  position: sticky;
+  top: 0;
+  padding: 10px 35px;
+  background: #3e3e3e;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo {
+  cursor: pointer;
+  width: 100px;
+  margin-right: 25px;
+}
+
+.navBrandBlock {
+  display: flex;
+  align-items: center;
+}
+
+.desktopNavLinks {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.stickyItem {
+  font-size: 15px;
+  color: white;
+  font-weight: 550;
+  margin: 0px 11px;
+  cursor: pointer;
+}
+
+.stickyItem:hover {
+  text-decoration: underline;
+}
+
+.iconButton {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.iconLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.moreButton {
+  margin-left: 6px;
+}
+
+.moreIcon {
+  margin-top: 5px;
+  width: 18px;
+}
+
+.afterMoreIconImage {
+  margin-top: 5px;
+  width: 23px;
+  cursor: pointer;
+}
+
+.searchDiv {
+  position: sticky;
+  top: 50px;
+  width: fit-content;
+  padding: 10px 30px 10px 10px;
+  margin-left: 72%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #3e3e3e;
+}
+
+.searchInput {
+  width: 200px;
+  height: 20px;
+}
+
+.searchButton {
+  width: 40px;
+  font-weight: 550;
+  background: #6288a5;
+  color: white;
+  border: transparent;
+  height: 20px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.moreSticky {
+  margin: auto;
+  position: sticky;
+  top: 50px;
+  padding: 0px 0px 10px 158px;
+  background: #3e3e3e;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.moreStickyItem {
+  margin: 0 11px;
+}
+
+.desktopOnly {
+  display: flex;
+}
+
+.hamburgerButton {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-left: auto;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hamburgerButton span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  margin: 0 auto;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hamburgerButton.isOpen span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburgerButton.isOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerButton.isOpen span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobileMenuPanel {
+  display: none;
+}
+
+.mobileMenuSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobileMenuGrid {
+  margin-top: 12px;
+}
+
+.mobileMenuLink {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.mobileMenuLink:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.mobileMenuActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .upperDiv {
+    display: none;
+  }
+
+  .stickyNav {
+    padding: 8px 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .desktopNavLinks {
+    display: none;
+  }
+
+  .hamburgerButton {
+    display: flex;
+  }
+
+  .mobileMenuPanel {
+    display: flex;
+    flex-direction: column;
+    background: #2f2f2f;
+    padding: 12px;
+  }
+
+  .searchDiv {
+    margin-left: 0;
+    padding: 8px 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+  }
+
+  .searchInput {
+    width: calc(100% - 55px);
+  }
+
+  .moreSticky {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    width: 82px;
+    margin-right: 10px;
+  }
+
+  .stickyNav {
+    padding: 8px 10px;
+  }
+
+  .mobileMenuSection {
+    gap: 8px;
+  }
+
+  .mobileMenuLink {
+    width: calc(50% - 4px);
+    box-sizing: border-box;
+  }
+}

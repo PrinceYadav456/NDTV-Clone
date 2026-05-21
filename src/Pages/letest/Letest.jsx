@@ -1,7 +1,7 @@
 import React from "react";
 import "./letest.css";
 import letestdata from "./letestdata.json";
-import letest from "./letest.json";
+import letest from "./letest.json.json";
 
 function Letest() {
   return (

@@ -2,4 +2,91 @@
   font-family: sans-serif;
   margin: auto;
   max-width: 1400px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+/* Responsive overrides for navbar and pages */
+@media (max-width: 1024px) {
+  .App {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .upperDiv {
+    padding: 10px 12px !important;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .stickyNav {
+    padding: 8px 12px !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  /* letest page adjustments */
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+  }
+
+  .trending {
+    margin-left: 0 !important;
+  }
+
+  .smallc {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-bottom: 12px !important;
+    align-items: center;
+  }
+
+  .text {
+    width: auto !important;
+    margin-left: 10px;
+  }
+
+  .right {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .mainR {
+    flex-direction: column !important;
+    padding: 8px !important;
+  }
+
+  .imgB {
+    width: 100% !important;
+    height: auto !important;
+    margin-right: 0 !important;
+  }
+
+  .imgS {
+    width: 48px !important;
+    height: 40px !important;
+    margin-top: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .upperDiv {
+    padding: 8px 8px !important;
+  }
+
+  .stickyNav {
+    padding: 6px 8px !important;
+  }
+
+  .trend {
+    padding-left: 12px !important;
+    width: auto !important;
+  }
+
+  .mainR {
+    padding: 6px !important;
+  }
 }
